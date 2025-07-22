@@ -17,7 +17,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <37 38 39 40 43 44 45 46>;
         };
 
@@ -114,7 +114,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
