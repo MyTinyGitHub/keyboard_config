@@ -9,6 +9,12 @@
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
+    rgb {
+        layers=<&Numpad_Nav_Layer>;
+        Numpad_Nav_Layer {
+            rgb=<0xff, 0x00, 0x00>
+        }
+    };
     behaviors {
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
@@ -79,7 +85,6 @@
 &trans  &trans  &trans  &kp N0  &trans                            &trans    &trans    &trans     &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans    &trans
                                 &trans  &trans  &trans    &trans  &trans    &trans
-            &rgb_ug HUE 255
             >;
         };
 
