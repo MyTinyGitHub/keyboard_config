@@ -97,15 +97,10 @@
 
 // right hand trackball configuration
 
-&trackball_listener {
-    mover {
-        layers = <1 3>;
-        input-processors =
-            // activate layer 3 within 500ms of the trackball moving,,
-            <&zip_temp_layer 3 500>;
-    };
-    
-    //left hand trackball configuration
+&trackball_peripheral_listener {
+    input-processors =
+        // activate layer 3 within 500ms of the trackball moving,,
+        <&zip_temp_layer 3 500>;
     
     scroller {
         layers = <2>;
