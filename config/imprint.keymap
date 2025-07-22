@@ -43,14 +43,14 @@
 
         default_layer {
             bindings = <
-&kp ESC     &kp F1                &kp F2           &kp F3                 &kp F4             &kp F5              &kp F6      &kp F7              &kp F8        &kp F9            &kp F10          &kp F11
-&kp GRAVE   &kp N1                &kp N2           &kp N3                 &kp N4             &kp N5              &kp N6      &kp N7              &kp N8        &kp N9            &kp N0           &kp MINUS
-&kp AMPS    &kp SQT               &kp COMMA        &kp PERIOD             &kp P              &kp Y               &kp F       &kp G               &kp C         &kp R             &kp L            &kp SLASH
-&kp ESCAPE  &kp A                 &kp O            &kp E                  &kp U              &kp I               &kp D       &kp H               &kp T         &kp N             &kp S            &kp MINUS
-&kp HASH    &hrm LMETA SEMI       &hrm LEFT_ALT Q  &hrm LCTRL J           &hrm LEFT_SHIFT K  &kp X               &kp B       &hrm RIGHT_SHIFT M  &hrm RCTRL W  &hrm RIGHT_ALT V  &hrm RMETA Z     &kp NON_US_BACKSLASH
-&kp CARET   &kp LEFT_PARENTHESIS  &kp PERCENT      &kp RIGHT_PARENTHESIS  &kp DOLLAR                                         &kp LEFT_BRACE      &kp LBKT      &kp RBKT          &kp RIGHT_BRACE  &kp ASTERISK
-                                                                          &kp SPACE          &kp TAB  &kp ESC    &kp DELETE  &kp BSPC            &kp SPACE
-                                                                          &kp ESCAPE         &mo 1    &mo 2      &kp CAPS    &mo 2               &kp ENTER
+&none       &none                 &none            &none                  &none              &none               &none        &none               &none          &none             &none            &none
+&kp GRAVE   &kp N1                &kp N2           &kp N3                 &kp N4             &kp N5              &kp N6       &kp N7              &kp N8         &kp N9            &kp N0           &kp EQUAL
+&kp AMPS    &kp SQT               &kp COMMA        &kp PERIOD             &kp P              &kp Y               &kp F        &kp G               &kp C          &kp R             &kp L            &kp SLASH
+&kp ESCAPE  &kp A                 &kp O            &kp E                  &kp U              &kp I               &kp D        &kp H               &kp T          &kp N             &kp S            &kp MINUS
+&kp HASH    &hrm LMETA SEMI       &hrm LEFT_ALT Q  &hrm LCTRL J           &hrm LEFT_SHIFT K  &kp X               &kp B        &hrm RIGHT_SHIFT M  &hrm RCTRL W   &hrm RIGHT_ALT V  &hrm RMETA Z     &kp NON_US_BACKSLASH
+&kp CARET   &kp LEFT_PARENTHESIS  &kp PERCENT      &kp RIGHT_PARENTHESIS  &kp DOLLAR                                          &kp LEFT_BRACE      &kp LBKT       &kp RBKT          &kp RIGHT_BRACE  &kp ASTERISK
+                                                                          &kp SPACE          &kp TAB  &kp ESC    &kp DELETE   &kp DELETE          &kp BACKSPACE
+                                                                          &kp ESCAPE         &mo 1    &mo 2      &key_repeat  &mo 2               &kp ENTER
             >;
         };
 
@@ -99,17 +99,17 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,
+        // activate layer 3 within 500ms of the trackball moving,,,
         <&zip_temp_layer 3 500>;
-    
+
     scroller {
         layers = <2>;
         input-processors =
-            // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,
+            // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,
             <&zip_xy_scaler 1 3>,
-            // make this trackball output scrolling events by default instead of cursor movement,,,,,,
+            // make this trackball output scrolling events by default instead of cursor movement,,,,,,,
             <&zip_xy_to_scroll_mapper>,
-            // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,
+            // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
     };
 };
