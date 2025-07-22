@@ -112,7 +112,7 @@
         <&zip_temp_layer 3 500>;
 
     scroller {
-        layers = <2>;
+        layers = <1>;
         input-processors =
             // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,,,,,,
             <&zip_xy_scaler 1 3>,
