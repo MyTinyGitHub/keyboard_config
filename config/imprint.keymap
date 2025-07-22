@@ -58,14 +58,14 @@
 
         default_layer {
             bindings = <
-&none       &none                 &none            &none                  &none              &none                     &none   &none               &none         &none             &none            &none
-&kp GRAVE   &kp N1                &kp N2           &kp N3                 &kp N4             &kp N5                    &kp N6  &kp N7              &kp N8        &kp N9            &kp N0           &kp EQUAL
-&kp AMPS    &kp SQT               &kp COMMA        &kp PERIOD             &kp P              &kp Y                     &kp F   &kp G               &kp C         &kp R             &kp L            &kp SLASH
-&kp ESCAPE  &hrm LGUI A           &hrm LEFT_ALT O  &hrm LCTRL E           &hrm LEFT_SHIFT U  &kp I                     &kp D   &hrm RIGHT_SHIFT H  &hrm RCTRL T  &hrm RIGHT_ALT N  &hrm RGUI S      &kp MINUS
-&kp HASH    &kp SEMICOLON         &kp Q            &kp J                  &kp K              &kp X                     &kp B   &kp M               &kp W         &kp V             &kp Z            &kp NON_US_BACKSLASH
-&kp CARET   &kp LEFT_PARENTHESIS  &kp PERCENT      &kp RIGHT_PARENTHESIS  &kp DOLLAR                                           &kp LEFT_BRACE      &kp LBKT      &kp RBKT          &kp RIGHT_BRACE  &kp ASTERISK
-                                                                          &hold_tap 1 SPACE  &kp BACKSPACE  &kp ESC    &none   &kp TAB             &kp DELETE
-                                                                          &kp ESCAPE         &kp AT         &none      &mo 2   &mo 1               &kp ENTER
+&none        &none                 &none            &none                  &none              &none                     &none   &none               &none         &none             &none              &none
+&kp GRAVE    &kp N1                &kp N2           &kp N3                 &kp N4             &kp N5                    &kp N6  &kp N7              &kp N8        &kp N9            &kp N0             &kp EQUAL
+&kp AMPS     &kp SQT               &kp COMMA        &kp PERIOD             &kp P              &kp Y                     &kp F   &kp G               &kp C         &kp R             &kp L              &kp SLASH
+&kp ESCAPE   &hrm LGUI A           &hrm LEFT_ALT O  &hrm LCTRL E           &hrm LEFT_SHIFT U  &kp I                     &kp D   &hrm RIGHT_SHIFT H  &hrm RCTRL T  &hrm RIGHT_ALT N  &hrm RGUI S        &kp MINUS
+&kp PERCENT  &kp SEMICOLON         &kp Q            &kp J                  &kp K              &kp X                     &kp B   &kp M               &kp W         &kp V             &kp Z              &kp NON_US_BACKSLASH
+&kp CARET    &kp LEFT_PARENTHESIS  &kp POUND        &kp RIGHT_PARENTHESIS  &kp DOLLAR                                           &kp LEFT_BRACE      &kp LBKT      &kp ASTERISK      &kp RIGHT_BRACKET  &kp RIGHT_BRACE
+                                                                           &hold_tap 1 SPACE  &kp BACKSPACE  &kp ESC    &none   &kp TAB             &kp DELETE
+                                                                           &kp ESCAPE         &kp AT         &none      &mo 2   &mo 1               &kp ENTER
             >;
         };
 
@@ -114,7 +114,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
