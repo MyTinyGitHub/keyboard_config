@@ -10,9 +10,9 @@
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
     behaviors {
-        hrm: hrm {
+        kp_140ms: kp_140ms {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
+            label = "KP_140MS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -34,6 +34,16 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
+
+        kp_170ms: kp_170ms {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_170MS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
             flavor = "balanced";
         };
     };
@@ -63,14 +73,14 @@
 
         default_layer {
             bindings = <
-&none        &none                 &none            &none                  &none              &none            &none   &none               &none            &none             &none              &none
-&kp GRAVE    &kp N1                &kp N2           &kp N3                 &kp N4             &kp N5           &kp N6  &kp N7              &kp N8           &kp N9            &kp N0             &kp EQUAL
-&kp AMPS     &kp SQT               &kp COMMA        &kp PERIOD             &kp P              &kp Y            &kp F   &kp G               &kp C            &kp R             &kp L              &kp SLASH
-&kp MINUS    &hrm LGUI A           &hrm LEFT_ALT O  &hrm LCTRL E           &hrm LEFT_SHIFT U  &kp I            &kp D   &hrm RIGHT_SHIFT H  &hrm RCTRL T     &hrm RIGHT_ALT N  &hrm RGUI S        &kp AT_SIGN
-&kp PERCENT  &kp SEMICOLON         &kp Q            &kp J                  &kp K              &kp X            &kp B   &kp M               &kp W            &kp V             &kp Z              &kp NON_US_BACKSLASH
-&kp CARET    &kp LEFT_PARENTHESIS  &kp POUND        &kp RIGHT_PARENTHESIS  &kp DOLLAR                                  &kp LEFT_BRACE      &kp LBKT         &kp ASTERISK      &kp RIGHT_BRACKET  &kp RIGHT_BRACE
-                                                                           &hold_tap 1 SPACE  &none   &none    &none   &none               &hold_tap 1 TAB
-                                                                           &kp DELETE         &none   &none    &mo 2   &none               &kp BACKSPACE
+&none        &none                 &none                 &none                  &none                   &none            &none   &none                    &none              &none                  &none              &none
+&kp GRAVE    &kp N1                &kp N2                &kp N3                 &kp N4                  &kp N5           &kp N6  &kp N7                   &kp N8             &kp N9                 &kp N0             &kp EQUAL
+&kp AMPS     &kp SQT               &kp COMMA             &kp PERIOD             &kp P                   &kp Y            &kp F   &kp G                    &kp C              &kp R                  &kp L              &kp SLASH
+&kp MINUS    &kp_170ms LGUI A      &kp_140ms LEFT_ALT O  &kp_140ms LCTRL E      &kp_140ms LEFT_SHIFT U  &kp I            &kp D   &kp_140ms RIGHT_SHIFT H  &kp_140ms RCTRL T  &kp_140ms RIGHT_ALT N  &kp_170ms RGUI S   &kp AT_SIGN
+&kp PERCENT  &kp SEMICOLON         &kp Q                 &kp J                  &kp K                   &kp X            &kp B   &kp M                    &kp W              &kp V                  &kp Z              &kp NON_US_BACKSLASH
+&kp CARET    &kp LEFT_PARENTHESIS  &kp POUND             &kp RIGHT_PARENTHESIS  &kp DOLLAR                                       &kp LEFT_BRACE           &kp LBKT           &kp ASTERISK           &kp RIGHT_BRACKET  &kp RIGHT_BRACE
+                                                                                &hold_tap 1 SPACE       &none   &none    &none   &none                    &hold_tap 1 TAB
+                                                                                &kp DELETE              &none   &none    &mo 2   &none                    &kp BACKSPACE
             >;
         };
 
@@ -119,7 +129,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
