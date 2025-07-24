@@ -56,15 +56,28 @@
             key-positions = <52 55>;
         };
 
-        enter_combo {
-            bindings = <&kp ENTER>;
-            key-positions = <40 43>;
+        left_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <51 52>;
             layers = <0>;
         };
 
-        escape {
+        right_escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <28 31>;
+            key-positions = <55 56>;
+            layers = <0>;
+        };
+
+        left_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <39 40>;
+            layers = <0>;
+        };
+
+        right_ener {
+            bindings = <&kp ENTER>;
+            key-positions = <43 44>;
+            layers = <0>;
         };
     };
 
@@ -129,7 +142,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
