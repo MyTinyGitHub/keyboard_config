@@ -55,6 +55,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
+            hold-trigger-key-positions = <18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 54 55 56 57 58 59 65 66 67 68 69 6 7 8 9 10 11>;
         };
 
         sk_2s: sk_2s {
@@ -149,7 +150,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
