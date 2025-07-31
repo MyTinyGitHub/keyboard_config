@@ -107,14 +107,14 @@
 
         Extended_Layer {
             bindings = <
-&trans  &trans                                &trans                                &trans                                 &trans                            &trans               &trans         &trans         &trans    &trans      &trans           &trans
-&trans  &trans                                &trans                                &trans                                 &trans                            &trans               &trans         &trans         &trans    &trans      &trans           &trans
-&trans  &kp ESC                               &kp K_BACK                            &kp K_FIND                             &kp K_FORWARD                     &trans               &kp PG_UP      &kp HOME       &kp UP    &kp END     &kp CAPSLOCK     &trans
-&trans  &hold_tap_one_shot LEFT_GUI LEFT_GUI  &hold_tap_one_shot LEFT_ALT LEFT_ALT  &hold_tap_one_shot LCTRL LEFT_CONTROL  &hold_tap_one_shot LSHIFT LSHIFT  &trans               &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT   &kp DELETE       &trans
-&trans  &kp LC(Z)                             &kp LC(X)                             &kp LC(C)                              &trans                            &kp LC(V)            &kp ENTER      &kp BACKSPACE  &kp TAB   &kp K_MENU  &kp PRINTSCREEN  &trans
-&trans  &trans                                &trans                                &trans                                 &trans                                                                &trans         &trans    &trans      &trans           &trans
-                                                                                                                           &trans                            &trans     &trans    &trans         &trans         &trans
-                                                                                                                           &trans                            &trans     &trans    &trans         &trans         &trans
+&trans  &trans                                &trans                                &trans                                 &trans                            &trans                      &trans            &trans            &trans            &trans            &trans           &trans
+&trans  &kp LA(NUMBER_1)                      &kp LA(NUMBER_2)                      &kp LA(NUMBER_3)                       &kp LA(NUMBER_4)                  &kp LA(NUMBER_5)            &kp LA(NUMBER_6)  &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &trans           &trans
+&trans  &kp ESC                               &kp K_BACK                            &kp K_FIND                             &kp K_FORWARD                     &trans                      &kp PG_UP         &kp HOME          &kp UP            &kp END           &kp CAPSLOCK     &trans
+&trans  &hold_tap_one_shot LEFT_GUI LEFT_GUI  &hold_tap_one_shot LEFT_ALT LEFT_ALT  &hold_tap_one_shot LCTRL LEFT_CONTROL  &hold_tap_one_shot LSHIFT LSHIFT  &trans                      &kp PAGE_DOWN     &kp LEFT          &kp DOWN          &kp RIGHT         &kp DELETE       &trans
+&trans  &kp LC(Z)                             &kp LC(X)                             &kp LC(C)                              &trans                            &kp LC(V)                   &kp ENTER         &kp BACKSPACE     &kp TAB           &kp K_MENU        &kp PRINTSCREEN  &trans
+&trans  &trans                                &trans                                &trans                                 &trans                                                                          &trans            &trans            &trans            &trans           &trans
+                                                                                                                           &trans                            &trans            &trans    &trans            &trans            &trans
+                                                                                                                           &trans                            &trans            &trans    &trans            &trans            &trans
             >;
         };
 
@@ -150,7 +150,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
