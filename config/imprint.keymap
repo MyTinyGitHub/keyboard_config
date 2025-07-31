@@ -97,12 +97,12 @@
 
         Extended_Layer {
             bindings = <
-&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &trans         &trans    &trans     &trans      &trans
-&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &trans         &trans    &trans     &trans      &trans
-&trans  &kp ESC  &kp K_BACK  &kp K_FIND  &kp K_FORWARD                   &trans            &kp PG_UP      &kp HOME       &kp UP    &kp END    &trans      &trans
-&trans  &trans   &trans      &trans      &hold_tap_one_shot LCTRL LCTRL  &trans            &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT  &kp DELETE  &trans
-&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &kp BACKSPACE  &trans    &trans     &trans      &trans
-&trans  &trans   &trans      &trans      &trans                                                           &trans         &trans    &trans     &trans      &trans
+&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &trans         &trans    &trans      &trans           &trans
+&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &trans         &trans    &trans      &trans           &trans
+&trans  &kp ESC  &kp K_BACK  &kp K_FIND  &kp K_FORWARD                   &trans            &kp PG_UP      &kp HOME       &kp UP    &kp END     &kp CAPSLOCK     &trans
+&trans  &trans   &trans      &trans      &hold_tap_one_shot LCTRL LCTRL  &trans            &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT   &kp DELETE       &trans
+&trans  &trans   &trans      &trans      &trans                          &trans            &kp ENTER      &kp BACKSPACE  &kp TAB   &kp K_MENU  &kp PRINTSCREEN  &trans
+&trans  &trans   &trans      &trans      &trans                                                           &trans         &trans    &trans      &trans           &trans
                                          &trans                          &trans  &trans    &trans         &trans         &trans
                                          &trans                          &trans  &trans    &trans         &trans         &trans
             >;
@@ -140,7 +140,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
