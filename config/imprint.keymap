@@ -50,18 +50,17 @@
         hold_tap_one_shot: hold_tap_one_shot {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_ONE_SHOT";
-            bindings = <&kp>, <&m_sk>;
+            bindings = <&kp>, <&sk_2s>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
 
-        m_sk: m_sk {
+        sk_2s: sk {
             compatible = "zmk,behavior-sticky-key";
             label = "modifiers sticky key";
             bindings = <&none>;
             #binding-cells = <1>;
-            ignore-modifiers;
             release-after-ms = <2000>;
         };
     };
@@ -149,7 +148,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
