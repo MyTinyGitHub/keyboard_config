@@ -54,12 +54,13 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
+            flavor = "balanced";
         };
 
-        sk_2s: sk {
+        sk_2s: sk_2s {
             compatible = "zmk,behavior-sticky-key";
             label = "modifiers sticky key";
-            bindings = <&none>;
+            bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <2000>;
         };
@@ -148,7 +149,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
