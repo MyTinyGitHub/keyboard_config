@@ -81,14 +81,14 @@
 
         default_layer {
             bindings = <
-&none       &none                 &none                 &none                 &none                   &none             &none   &none                   &none              &none                 &none                 &none
-&kp GRAVE   &kp N1                &kp N2                &kp N3                &kp N4                  &kp N5            &kp N6  &kp N7                  &kp N8             &kp N9                &kp N0                &kp EQUAL
-&kp ESCAPE  &kp SQT               &kp COMMA             &kp PERIOD            &kp P                   &kp Y             &kp F   &kp G                   &kp C              &kp R                 &kp L                 &kp SLASH
-&kp MINUS   &kp_170ms LEFT_WIN A  &kp_150ms LEFT_ALT O  &kp_150ms LCTRL E     &kp_150ms LEFT_SHIFT U  &kp I             &kp D   &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT N  &kp_170ms LEFT_WIN S  &kp BACKSLASH
-&none       &kp SEMICOLON         &kp Q                 &kp J                 &kp K                   &kp X             &kp B   &kp M                   &kp W              &kp V                 &kp Z                 &none
-&none       &none                 &none                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                             &kp LEFT_BRACE          &kp LBKT           &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &none
-                                                                              &hold_tap 1 SPACE       &kp ESC  &none    &none   &none                   &hold_tap 1 ENTER
-                                                                              &kp DELETE              &none    &none    &mo 2   &none                   &kp BACKSPACE
+&none       &none                 &none                 &none                 &none                   &none            &none   &none                   &none              &none                 &none                 &none
+&kp GRAVE   &kp N1                &kp N2                &kp N3                &kp N4                  &kp N5           &kp N6  &kp N7                  &kp N8             &kp N9                &kp N0                &kp EQUAL
+&kp ESCAPE  &kp SQT               &kp COMMA             &kp PERIOD            &kp P                   &kp Y            &kp F   &kp G                   &kp C              &kp R                 &kp L                 &kp SLASH
+&kp MINUS   &kp_170ms LEFT_WIN A  &kp_150ms LEFT_ALT O  &kp_150ms LCTRL E     &kp_150ms LEFT_SHIFT U  &kp I            &kp D   &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT N  &kp_170ms LEFT_WIN S  &kp BACKSLASH
+&none       &kp SEMICOLON         &kp Q                 &kp J                 &kp K                   &kp X            &kp B   &kp M                   &kp W              &kp V                 &kp Z                 &none
+&none       &none                 &none                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                            &kp LEFT_BRACE          &kp LBKT           &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &none
+                                                                              &hold_tap 1 SPACE       &none   &none    &none   &none                   &hold_tap 1 ENTER
+                                                                              &kp DELETE              &none   &none    &mo 2   &none                   &kp BACKSPACE
             >;
         };
 
@@ -137,7 +137,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
