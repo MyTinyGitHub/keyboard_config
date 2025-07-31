@@ -46,6 +46,15 @@
             tapping-term-ms = <170>;
             flavor = "balanced";
         };
+
+        hold_tap_one_shot: hold_tap_one_shot {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_ONE_SHOT";
+            bindings = <&kp>, <&kt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     combos {
@@ -86,16 +95,16 @@
             >;
         };
 
-        Numpad_Nav_Layer {
+        Extended_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans                            &trans    &trans    &trans     &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans    &trans
-                                &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &trans         &trans    &trans     &trans      &trans
+&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &trans         &trans    &trans     &trans      &trans
+&trans  &kp ESC  &kp K_BACK  &kp K_FIND  &kp K_FORWARD                   &trans            &kp PG_UP      &kp HOME       &kp UP    &kp END    &trans      &trans
+&trans  &trans   &trans      &trans      &hold_tap_one_shot LCTRL LCTRL  &trans            &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT  &kp DELETE  &trans
+&trans  &trans   &trans      &trans      &trans                          &trans            &trans         &kp BACKSPACE  &trans    &trans     &trans      &trans
+&trans  &trans   &trans      &trans      &trans                                                           &trans         &trans    &trans     &trans      &trans
+                                         &trans                          &trans  &trans    &trans         &trans         &trans
+                                         &trans                          &trans  &trans    &trans         &trans         &trans
             >;
         };
 
@@ -131,7 +140,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
