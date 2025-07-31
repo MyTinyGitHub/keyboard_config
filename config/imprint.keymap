@@ -100,8 +100,8 @@
 &kp MINUS  &kp A          &kp O      &kp E                 &kp U                  &kp I            &kp D   &kp H           &kp T              &kp N              &kp S            &kp BACKSLASH
 &none      &kp SEMICOLON  &kp Q      &kp J                 &kp K                  &kp X            &kp B   &kp M           &kp W              &kp V              &kp Z            &none
 &none      &none          &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &kp LEFT_BRACE  &kp LBKT           &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none
-                                                           &kp SPACE              &none   &none    &none   &none           &kp LEFT_SHIFT
-                                                           &hold_tap 1 ESC        &none   &none    &mo 2   &none           &hold_tap 1 ENTER
+                                                           &hold_tap 1 SPACE      &none   &none    &none   &none           &hold_tap 1 ENTER
+                                                           &kp ESCAPE             &none   &none    &mo 2   &none           &kp LEFT_SHIFT
             >;
         };
 
@@ -150,7 +150,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
