@@ -124,7 +124,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
 &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &mkp MB4   &lt 1 D    &mkp MB5   &trans            &trans     &trans                 &trans     &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                                  &trans                 &trans     &trans  &trans  &trans
                                       &trans     &trans  &trans    &mkp LCLK  &mkp MCLK              &mkp RCLK
                                       &trans     &trans  &trans    &mkp MB4   &hold_tap 1 BACKSPACE  &mkp MB5
@@ -137,7 +137,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
