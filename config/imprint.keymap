@@ -88,7 +88,7 @@
 &none       &kp SEMICOLON         &kp Q                 &kp J                 &kp K                   &kp X            &kp B   &kp M                   &kp W              &kp V                 &kp Z                 &none
 &none       &none                 &none                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                            &kp LEFT_BRACE          &kp LBKT           &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &none
                                                                               &hold_tap 1 SPACE       &none   &none    &none   &none                   &hold_tap 1 ENTER
-                                                                              &kp DELETE              &none   &none    &mo 2   &none                   &kp BACKSPACE
+                                                                              &kp DELETE              &none   &none    &mo 3   &none                   &kp BACKSPACE
             >;
         };
 
@@ -105,19 +105,6 @@
             >;
         };
 
-        Keyboard_Control_Layer {
-            bindings = <
-&trans       &trans        &trans        &trans        &trans        &trans                  &trans           &trans           &trans           &trans           &trans           &trans
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans           &trans           &trans
-&sys_reset   &trans        &trans        &trans        &trans        &trans                  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &sys_reset
-&bootloader  &trans        &trans        &trans        &trans        &trans                  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bootloader
-&to 4        &trans        &trans        &trans        &trans        &trans                  &trans           &trans           &trans           &trans           &trans           &to 4
-&to 4        &trans        &trans        &trans        &trans                                                 &trans           &trans           &trans           &trans           &to 4
-                                                       &trans        &trans        &trans    &trans           &trans           &trans
-                                                       &trans        &trans        &trans    &trans           &trans           &trans
-            >;
-        };
-
         Auto_Mouse_Layer {
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
@@ -130,6 +117,19 @@
                                       &trans     &trans  &trans    &mkp MB4   &hold_tap 1 BACKSPACE  &mkp MB5
             >;
         };
+
+        Keyboard_Control_Layer {
+            bindings = <
+&trans       &trans        &trans        &trans        &trans        &trans                  &trans           &trans           &trans           &trans           &trans           &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans           &trans           &trans
+&sys_reset   &trans        &trans        &trans        &trans        &trans                  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &sys_reset
+&bootloader  &trans        &trans        &trans        &trans        &trans                  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bootloader
+&to 0        &trans        &trans        &trans        &trans        &trans                  &trans           &trans           &trans           &trans           &trans           &to 0
+&to 0        &trans        &trans        &trans        &trans                                                 &trans           &trans           &trans           &trans           &to 0
+                                                       &trans        &trans        &trans    &trans           &trans           &trans
+                                                       &trans        &trans        &trans    &trans           &trans           &trans
+            >;
+        };
     };
 };
 
@@ -137,7 +137,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         <&zip_temp_layer 3 500>;
 
     scroller {
