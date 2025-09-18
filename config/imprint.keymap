@@ -120,14 +120,14 @@
 
         symbols_layer {
             bindings = <
-&trans           &trans            &trans                &trans                 &trans             &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp GRAVE        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PERIOD                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp EXCLAMATION  &kp COMMA         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp QUESTION                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp HASH         &kp CARET         &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR         &kp ASTERISK                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TILDE        &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &kp AMPERSAND     &kp SQT               &kp DOUBLE_QUOTES      &kp PLUS                                                 &trans  &trans  &trans  &trans  &trans
-                                                                                &kp BACKSLASH      &kp PERIOD    &kp ASTERISK    &trans  &trans  &trans
-                                                                                &kp PERCENT        &kp COLON     &kp AT_SIGN     &trans  &trans  &trans
+&trans           &trans            &trans                &trans                 &trans             &trans                        &trans             &trans         &trans  &trans     &trans     &trans
+&kp GRAVE        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PERIOD                    &kp GRAVE          &trans         &trans  &trans     &trans     &trans
+&kp EXCLAMATION  &kp COMMA         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp QUESTION                  &kp DOUBLE_QUOTES  &trans         &trans  &trans     &trans     &trans
+&kp HASH         &kp CARET         &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR         &kp ASTERISK                  &kp SQT            &kp BACKSPACE  &trans  &kp SPACE  &kp ENTER  &trans
+&kp TILDE        &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                     &trans             &kp DELETE     &trans  &trans     &trans     &trans
+&trans           &kp AMPERSAND     &kp SQT               &kp DOUBLE_QUOTES      &kp PLUS                                                            &trans         &trans  &trans     &trans     &trans
+                                                                                &kp BACKSLASH      &kp PERIOD    &kp ASTERISK    &trans             &trans         &trans
+                                                                                &kp PERCENT        &kp COLON     &kp AT_SIGN     &trans             &trans         &trans
             >;
         };
 
