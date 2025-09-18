@@ -81,14 +81,14 @@
 
         default_layer {
             bindings = <
-&none       &none                 &none                 &none                 &none                   &none            &none   &none                   &none              &none                 &none                 &none
-&kp GRAVE   &kp N1                &kp N2                &kp N3                &kp N4                  &kp N5           &kp N6  &kp N7                  &kp N8             &kp N9                &kp N0                &kp EQUAL
-&kp ESCAPE  &kp SQT               &kp COMMA             &kp PERIOD            &kp P                   &kp Y            &kp F   &kp G                   &kp C              &kp R                 &kp L                 &kp SLASH
-&kp MINUS   &kp_170ms LEFT_WIN A  &kp_150ms LEFT_ALT O  &kp_150ms LCTRL E     &kp_150ms LEFT_SHIFT U  &kp I            &kp D   &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT N  &kp_170ms LEFT_WIN S  &kp BACKSLASH
-&none       &kp SEMICOLON         &kp Q                 &kp J                 &kp K                   &kp X            &kp B   &kp M                   &kp W              &kp V                 &kp Z                 &none
-&none       &none                 &none                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                            &kp LEFT_BRACE          &kp LBKT           &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &none
+&none       &none                 &none                 &none                 &none                   &none            &none   &none                   &none                  &none                 &none                 &none
+&kp GRAVE   &kp N1                &kp N2                &kp N3                &kp N4                  &kp N5           &kp N6  &kp N7                  &kp N8                 &kp N9                &kp N0                &kp EQUAL
+&kp ESCAPE  &kp SQT               &kp COMMA             &kp PERIOD            &kp P                   &kp Y            &kp F   &kp G                   &kp C                  &kp R                 &kp L                 &kp SLASH
+&kp MINUS   &kp_170ms LEFT_WIN A  &kp_150ms LEFT_ALT O  &kp_150ms LCTRL E     &kp_150ms LEFT_SHIFT U  &kp I            &kp D   &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T      &kp_150ms LEFT_ALT N  &kp_170ms LEFT_WIN S  &kp BACKSLASH
+&none       &kp SEMICOLON         &kp Q                 &kp J                 &kp K                   &kp X            &kp B   &kp M                   &kp W                  &kp V                 &kp Z                 &none
+&none       &none                 &none                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                            &kp LEFT_BRACE          &kp LBKT               &kp RIGHT_BRACKET     &kp RIGHT_BRACE       &none
                                                                               &hold_tap 1 SPACE       &none   &none    &none   &none                   &hold_tap 1 ENTER
-                                                                              &kp DELETE              &none   &none    &mo 3   &none                   &kp BACKSPACE
+                                                                              &kp DELETE              &none   &none    &mo 4   &none                   &hold_tap 3 BACKSPACE
             >;
         };
 
@@ -115,6 +115,19 @@
 &trans  &trans  &trans     &trans     &trans                                  &trans                 &trans     &trans  &trans  &trans
                                       &trans     &trans  &trans    &mkp LCLK  &mkp MCLK              &mkp RCLK
                                       &trans     &trans  &trans    &mkp MB4   &hold_tap 1 BACKSPACE  &mkp MB5
+            >;
+        };
+
+        symbols_layer {
+            bindings = <
+&trans           &trans            &trans                &trans                 &trans             &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PERIOD                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp EXCLAMATION  &kp COMMA         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp QUESTION                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp HASH         &kp CARET         &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR         &kp ASTERISK                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE        &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &kp AMPERSAND     &kp SQT               &kp DOUBLE_QUOTES      &kp PLUS                                                 &trans  &trans  &trans  &trans  &trans
+                                                                                &kp BACKSLASH      &kp PERIOD    &kp ASTERISK    &trans  &trans  &trans
+                                                                                &kp PERCENT        &kp COLON     &kp AT_SIGN     &trans  &trans  &trans
             >;
         };
 
