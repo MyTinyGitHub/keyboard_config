@@ -65,6 +65,51 @@
             #binding-cells = <1>;
             release-after-ms = <2000>;
         };
+
+        apo_left_par: apo_left_par {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APO_LEFT_PAR";
+            bindings = <&kp SQT>, <&kp LEFT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        double_apo_right_par: double_apo_right_par {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOUBLE_APO_RIGHT_PAR";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_semicolon: comma_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMICOLON";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        period_colon: period_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_COLON";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        question_exclamation: question_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTION_EXCLAMATION";
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -112,14 +157,14 @@
 
         default_layer {
             bindings = <
-&none  &none                 &none                 &none              &none                   &none               &none              &none                   &none              &none                 &none                 &none
-&none  &kp N1                &kp N2                &kp N3             &kp N4                  &kp N5              &kp N6             &kp N7                  &kp N8             &kp N9                &kp N0                &none
-&none  &kp B                 &kp Y                 &kp O              &kp U                   &kp SQT             &kp DOUBLE_QUOTES  &kp L                   &kp D              &kp W                 &kp V                 &kp Z
-&none  &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL E  &kp_150ms LEFT_SHIFT A  &kp COMMA           &kp PERIOD         &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT S  &kp_170ms LEFT_WIN N  &kp Q
-&none  &kp G                 &kp X                 &kp J              &kp K                   &kp MINUS           &kp QUESTION       &kp R                   &kp M              &kp F                 &kp P                 &none
-&none  &kp GRAVE             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &none                                                          &none                   &none              &none                 &none                 &none
-                                                                      &hold_tap 1 ESCAPE      &kp INS    &none    &none              &kp DELETE              &hold_tap 1 ENTER
-                                                                      &kp SPACE               &kp TAB    &none    &mo 4              &kp BACKSPACE           &hold_tap 3 R
+&none  &none                 &none                 &none              &none                   &none                      &none                  &none                   &none              &none                 &none                 &none
+&none  &kp N1                &kp N2                &kp N3             &kp N4                  &kp N5                     &kp N6                 &kp N7                  &kp N8             &kp N9                &kp N0                &none
+&none  &kp B                 &kp Y                 &kp O              &kp U                   &apo_left_par              &double_apo_right_par  &kp L                   &kp D              &kp W                 &kp V                 &kp Z
+&none  &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL E  &kp_150ms LEFT_SHIFT A  &comma_semicolon           &period_colon          &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT S  &kp_170ms LEFT_WIN N  &kp Q
+&none  &kp G                 &kp X                 &kp J              &kp K                   &kp MINUS                  &question_exclamation  &kp R                   &kp M              &kp F                 &kp P                 &none
+&none  &kp GRAVE             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &none                                                                     &none                   &none              &none                 &none                 &none
+                                                                      &hold_tap 1 ESCAPE      &kp INS           &none    &none                  &kp DELETE              &hold_tap 1 ENTER
+                                                                      &kp SPACE               &kp TAB           &none    &mo 4                  &kp BACKSPACE           &hold_tap 3 R
             >;
         };
 
