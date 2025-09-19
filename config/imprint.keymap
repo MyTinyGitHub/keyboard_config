@@ -78,11 +78,12 @@
         quotes {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <30 40>;
+            layers = <0>;
         };
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <42 40>;
+            key-positions = <40 42>;
         };
 
         e {
