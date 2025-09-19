@@ -157,14 +157,14 @@
 
         default_layer {
             bindings = <
-&none  &none                 &none                 &none              &none                   &none                      &none                  &none                   &none              &none                 &none                 &none
-&none  &kp N1                &kp N2                &kp N3             &kp N4                  &kp N5                     &kp N6                 &kp N7                  &kp N8             &kp N9                &kp N0                &none
-&none  &kp B                 &kp Y                 &kp O              &kp U                   &apo_left_par              &double_apo_right_par  &kp L                   &kp D              &kp W                 &kp V                 &kp Z
-&none  &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL E  &kp_150ms LEFT_SHIFT A  &comma_semicolon           &period_colon          &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT S  &kp_170ms LEFT_WIN N  &kp Q
-&none  &kp G                 &kp X                 &kp J              &kp K                   &kp MINUS                  &question_exclamation  &kp R                   &kp M              &kp F                 &kp P                 &none
-&none  &kp GRAVE             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &none                                                                     &none                   &none              &none                 &none                 &none
-                                                                      &hold_tap 1 ESCAPE      &kp INS           &none    &none                  &kp DELETE              &hold_tap 1 ENTER
-                                                                      &kp SPACE               &kp TAB           &none    &mo 4                  &kp BACKSPACE           &hold_tap 3 R
+&none  &none                 &none                 &none              &none                   &none                   &none   &none                   &none              &none                 &none                 &none
+&none  &kp N1                &kp N2                &kp N3             &kp N4                  &kp N5                  &kp N6  &kp N7                  &kp N8             &kp N9                &kp N0                &none
+&none  &kp Z                 &kp Y                 &kp U              &kp O                   &kp SEMICOLON           &kp Q   &kp L                   &kp D              &kp P                 &kp X                 &none
+&kp W  &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL E  &kp_150ms LEFT_SHIFT A  &kp COMMA               &kp K   &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT S  &kp_170ms LEFT_WIN N  &kp F
+&none  &kp SQT               &kp MINUS             &kp EQUAL          &kp PERIOD              &kp SLASH               &kp J   &kp M                   &kp G              &kp B                 &kp V                 &none
+&none  &kp GRAVE             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &none                                                   &none                   &none              &none                 &none                 &none
+                                                                      &hold_tap 1 ESCAPE      &kp INS        &none    &none   &kp DELETE              &hold_tap 1 ENTER
+                                                                      &kp SPACE               &kp TAB        &none    &mo 4   &kp BACKSPACE           &hold_tap 3 R
             >;
         };
 
