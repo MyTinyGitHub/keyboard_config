@@ -79,26 +79,31 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <30 40>;
             layers = <0>;
+            timeout-ms = <150>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <40 42>;
+            timeout-ms = <150>;
         };
 
         e {
             bindings = <&kp EXCL>;
             key-positions = <40 54>;
+            timeout-ms = <150>;
         };
 
         Lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <43 29>;
+            timeout-ms = <150>;
         };
 
         sem {
             bindings = <&kp SEMI>;
             key-positions = <43 41>;
+            timeout-ms = <150>;
         };
     };
 
