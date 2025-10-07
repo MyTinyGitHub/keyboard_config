@@ -106,7 +106,7 @@
 &none  &kp SQT               &kp MINUS             &kp EQUAL          &kp PERIOD              &kp SLASH                                                   &kp J               &kp M                   &kp G              &kp B                 &kp V                 &none
 &none  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp GRAVE                                                                                               &none                   &none              &none                 &none                 &none
                                                                       &hold_tap 1 ESCAPE      &left_par_shift_less_then  &right_par_shift_greater_then    &kp HOME            &kp END                 &hold_tap 1 ENTER
-                                                                      &kp SPACE               &kp TAB                    &kp INS                          &hold_tap 4 DELETE  &kp BACKSPACE           &hold_tap 3 R
+                                                                      &hold_tap 2 SPACE       &kp TAB                    &kp INS                          &hold_tap 6 DELETE  &kp BACKSPACE           &hold_tap 3 R
             >;
         };
 
@@ -123,16 +123,16 @@
             >;
         };
 
-        Auto_Mouse_Layer {
+        number_layer {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &mkp MB4   &lt 1 D    &mkp MB5   &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                                  &trans                 &trans     &trans  &trans  &trans
-                                      &trans     &trans  &trans    &mkp LCLK  &mkp MCLK              &mkp RCLK
-                                      &trans     &trans  &trans    &mkp MB4   &hold_tap 1 BACKSPACE  &mkp MB5
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans           &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans           &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                            &kp KP_NUMBER_0  &trans           &trans           &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans           &trans
+                                &trans  &trans  &trans    &trans  &trans           &trans
             >;
         };
 
@@ -146,6 +146,19 @@
 &trans           &kp AMPERSAND     &kp SQT               &kp DOUBLE_QUOTES      &kp PLUS                                                            &trans         &trans  &trans     &trans     &trans
                                                                                 &kp BACKSLASH      &kp PERIOD    &kp ASTERISK    &trans             &trans         &trans
                                                                                 &kp PERCENT        &kp COLON     &kp AT_SIGN     &trans             &trans         &trans
+            >;
+        };
+
+        Auto_Mouse_Layer {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &mkp MB4   &lt 1 D    &mkp MB5   &trans            &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                                  &trans                 &trans     &trans  &trans  &trans
+                                      &trans     &trans  &trans    &mkp LCLK  &mkp MCLK              &mkp RCLK
+                                      &trans     &trans  &trans    &mkp MB4   &hold_tap 1 BACKSPACE  &mkp MB5
             >;
         };
 
