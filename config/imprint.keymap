@@ -106,7 +106,7 @@
 &none  &kp SQT               &kp MINUS             &kp EQUAL          &kp PERIOD              &kp SLASH                                                   &kp J               &kp M                   &kp G              &kp B                 &kp V                 &none
 &none  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp GRAVE                                                                                               &none                   &none              &none                 &none                 &none
                                                                       &hold_tap 1 ESCAPE      &left_par_shift_less_then  &right_par_shift_greater_then    &kp HOME            &kp END                 &hold_tap 1 ENTER
-                                                                      &hold_tap 2 SPACE       &kp TAB                    &kp INS                          &hold_tap 6 DELETE  &kp BACKSPACE           &hold_tap 3 R
+                                                                      &hold_tap 2 SPACE       &kp TAB                    &kp INS                          &hold_tap 5 DELETE  &kp BACKSPACE           &hold_tap 3 R
             >;
         };
 
