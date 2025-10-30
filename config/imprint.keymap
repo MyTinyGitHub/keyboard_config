@@ -105,7 +105,7 @@
 &kp W            &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL E  &kp_150ms LEFT_SHIFT A  &kp COMMA                                                   &kp K               &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT N  &kp_170ms LEFT_WIN S  &kp F
 &kp EXCLAMATION  &kp SQT               &kp MINUS             &kp EQUAL          &kp PERIOD              &kp SLASH                                                   &kp J               &kp M                   &kp G              &kp B                 &kp V                 &none
 &none            &kp BACKSLASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp GRAVE                                                                                               &kp DOLLAR              &kp AT_SIGN        &kp CARET             &none                 &none
-                                                                                &hold_tap 1 ESCAPE      &left_par_shift_less_then  &right_par_shift_greater_then    &kp HASH            &kp CARET               &hold_tap 1 ENTER
+                                                                                &hold_tap 1 ESCAPE      &left_par_shift_less_then  &right_par_shift_greater_then    &kp HASH            &kp STAR                &hold_tap 1 ENTER
                                                                                 &hold_tap 2 SPACE       &kp TAB                    &kp INS                          &hold_tap 5 DELETE  &kp BACKSPACE           &hold_tap 3 R
             >;
         };
