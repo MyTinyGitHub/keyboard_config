@@ -104,7 +104,7 @@
 &kp LS(ESCAPE)   &kp Z                 &kp Y                 &kp O              &kp U                   &kp EQUAL                                                   &kp Q               &kp L                   &kp D              &kp P                 &kp X                 &kp BACKSPACE
 &kp W            &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL A  &kp_150ms LEFT_SHIFT E  &kp SEMICOLON                                               &kp K               &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T  &kp_150ms LEFT_ALT N  &kp_170ms LEFT_WIN S  &kp F
 &kp EXCLAMATION  &kp SQT               &kp MINUS             &kp COMMA          &kp PERIOD              &kp SLASH                                                   &kp J               &kp M                   &kp G              &kp B                 &kp V                 &none
-&none            &kp GRAVE             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH                                                                                           &kp DOLLAR              &kp AT_SIGN        &kp CARET             &none                 &none
+&none            &kp GRAVE             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp ESCAPE                                                                                              &kp ENTER               &kp AT_SIGN        &kp CARET             &none                 &none
                                                                                 &hold_tap 1 SPACE       &left_par_shift_less_then  &right_par_shift_greater_then    &kp HASH            &kp STAR                &hold_tap 1 R
                                                                                 &hold_tap 2 ESCAPE      &kp TAB                    &kp INS                          &hold_tap 5 DELETE  &kp BACKSPACE           &hold_tap 3 ENTER
             >;
@@ -138,14 +138,14 @@
 
         symbols_layer {
             bindings = <
-&trans           &trans            &trans                &trans                 &trans             &trans                        &trans             &trans         &trans  &trans     &trans     &trans
-&kp GRAVE        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PERIOD                    &kp GRAVE          &trans         &trans  &trans     &trans     &trans
-&kp EXCLAMATION  &kp COMMA         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON      &kp QUESTION                  &kp DOUBLE_QUOTES  &trans         &trans  &trans     &trans     &trans
-&kp HASH         &kp CARET         &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR         &kp ASTERISK                  &kp SQT            &kp BACKSPACE  &trans  &kp SPACE  &kp ENTER  &trans
-&kp TILDE        &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                     &trans             &kp DELETE     &trans  &trans     &trans     &trans
-&trans           &kp AMPERSAND     &kp SQT               &kp DOUBLE_QUOTES      &kp PLUS                                                            &trans         &trans  &trans     &trans     &trans
-                                                                                &kp BACKSLASH      &kp PERIOD    &kp ASTERISK    &trans             &trans         &trans
-                                                                                &kp PERCENT        &kp COLON     &kp AT_SIGN     &trans             &trans         &trans
+&trans       &trans            &trans                &trans                 &trans             &trans                   &trans  &trans         &trans  &trans     &trans     &trans
+&trans       &trans            &trans                &trans                 &trans             &trans                   &none   &trans         &trans  &trans     &trans     &trans
+&kp PERCENT  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp AT_SIGN              &none   &trans         &trans  &trans     &trans     &trans
+&kp HASH     &kp CARET         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR         &kp ASTERISK             &none   &kp BACKSPACE  &trans  &kp SPACE  &kp ENTER  &trans
+&trans       &kp LESS_THAN     &kp PIPE              &kp AMPERSAND          &kp GREATER_THAN   &kp BACKSLASH            &trans  &kp DELETE     &trans  &trans     &trans     &trans
+&trans       &trans            &trans                &trans                 &trans                                              &trans         &trans  &trans     &trans     &trans
+                                                                            &trans             &trans         &trans    &trans  &trans         &trans
+                                                                            &trans             &trans         &trans    &trans  &trans         &trans
             >;
         };
 
