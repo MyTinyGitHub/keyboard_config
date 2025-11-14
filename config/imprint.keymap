@@ -178,7 +178,8 @@
 };
 
 &trackball_peripheral_listener {
-    input-processors = <&zip_temp_layer 4 500>;
+    //input-processors = <&zip_temp_layer 4 500>;
+    snipe-layers = <3>;
 
     scroller {
         layers = <1>;
