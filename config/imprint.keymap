@@ -99,14 +99,14 @@
 
         default_layer {
             bindings = <
-&none            &none                 &none                 &none              &none                   &none                                                       &none               &none                   &none                      &none                          &none                 &none
-&none            &kp N1                &kp N2                &kp N3             &kp N4                  &kp N5                                                      &kp N6              &kp N7                  &kp N8                     &kp N9                         &kp N0                &none
-&kp LS(ESCAPE)   &kp Z                 &kp Y                 &kp O              &kp U                   &kp EQUAL                                                   &kp Q               &kp L                   &kp D                      &kp P                          &kp X                 &kp BACKSPACE
-&kp W            &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL A  &kp_150ms LEFT_SHIFT E  &kp SEMICOLON                                               &kp K               &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T          &kp_150ms LEFT_ALT N           &kp_170ms LEFT_WIN S  &kp F
-&kp EXCLAMATION  &kp SQT               &kp MINUS             &kp COMMA          &kp PERIOD              &kp SLASH                                                   &kp J               &kp M                   &kp G                      &kp B                          &kp V                 &none
-&none            &kp GRAVE             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp ESCAPE                                                                                              &kp ENTER               &left_par_shift_less_then  &right_par_shift_greater_then  &none                 &none
-                                                                                &hold_tap 1 SPACE       &left_par_shift_less_then  &right_par_shift_greater_then    &kp HASH            &kp STAR                &hold_tap 1 R
-                                                                                &hold_tap 2 ESCAPE      &kp TAB                    &kp INS                          &hold_tap 5 DELETE  &kp BACKSPACE           &hold_tap 3 ENTER
+&none        &none                 &none                 &none              &none                   &none                                                       &none               &none                   &none                      &none                          &none                 &none
+&kp ESCAPE   &kp N1                &kp N2                &kp N3             &kp N4                  &kp N5                                                      &kp N6              &kp N7                  &kp N8                     &kp N9                         &kp N0                &kp GRAVE
+&kp LS(TAB)  &kp Z                 &kp Y                 &kp O              &kp U                   &kp EQUAL                                                   &kp Q               &kp L                   &kp D                      &kp P                          &kp X                 &kp BACKSLASH
+&kp W        &kp_170ms LEFT_WIN C  &kp_150ms LEFT_ALT I  &kp_150ms LCTRL A  &kp_150ms LEFT_SHIFT E  &kp SEMICOLON                                               &kp K               &kp_150ms LEFT_SHIFT H  &kp_150ms LCTRL T          &kp_150ms LEFT_ALT N           &kp_170ms LEFT_WIN S  &kp F
+&none        &hold_tap 4 SQT       &kp MINUS             &kp COMMA          &kp PERIOD              &kp SLASH                                                   &kp J               &kp M                   &kp G                      &kp B                          &kp V                 &none
+&none        &none                 &none                 &none              &kp ESCAPE                                                                                              &kp ENTER               &left_par_shift_less_then  &right_par_shift_greater_then  &none                 &none
+                                                                            &hold_tap 1 SPACE       &left_par_shift_less_then  &right_par_shift_greater_then    &none               &none                   &hold_tap 1 R
+                                                                            &hold_tap 2 BACKSPACE   &kp LEFT_BRACKET           &kp RIGHT_BRACKET                &hold_tap 5 DELETE  &none                   &hold_tap 3 ENTER
             >;
         };
 
@@ -151,14 +151,14 @@
 
         Auto_Mouse_Layer {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &mkp MB4   &lt 1 D    &mkp MB5   &trans            &trans     &trans                 &trans     &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                                  &trans                 &trans     &trans  &trans  &trans
-                                      &trans     &trans  &trans    &mkp LCLK  &mkp MCLK              &mkp RCLK
-                                      &trans     &trans  &trans    &mkp MB4   &hold_tap 1 BACKSPACE  &mkp MB5
+&trans  &trans  &trans     &trans     &trans     &trans               &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans               &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans               &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans               &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &mkp MB4   &lt 1 D    &mkp MB5   &trans               &trans     &trans                 &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                                     &trans                 &trans     &trans  &trans  &trans
+                                      &mkp LCLK  &mkp RCLK  &trans    &mkp LCLK  &mkp MCLK              &mkp RCLK
+                                      &mkp MCLK  &trans     &trans    &mkp MB4   &hold_tap 1 BACKSPACE  &mkp MB5
             >;
         };
 
