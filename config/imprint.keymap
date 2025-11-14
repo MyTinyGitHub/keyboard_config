@@ -180,9 +180,8 @@
 &trackball_peripheral_listener {
     //input-processors = <&zip_temp_layer 4 500>;
     sniper = {
-        layers = <4>
-        input-processors =
-            <&zip_xy_scaler 1 7>,
+        layers = <4>;
+        input-processors = <&zip_xy_scaler 1 7>;
     },
     scroller {
         layers = <1>;
